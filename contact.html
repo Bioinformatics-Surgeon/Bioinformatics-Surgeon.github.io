@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contactstyle.css">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 
     <title>Cody Goss</title>
 </head>
@@ -23,30 +28,47 @@
     </div>
   </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
+  <div class="container">
+    <h1 class="brand"><span>Acme</span> Web Design</h1>
+    <br>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Mudanic Web Development</h3>
         <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
+          <li><i class="fa fa-road"></i> Atlanta, GA</li>
+          <li><i class="fa fa-phone"></i> (770)-846-8905</li>
+          <li><i class="fa fa-envelope"></i> mudanic</li>
         </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <form>
+          <p>
+            <label>Name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button>Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 
   <footer>
