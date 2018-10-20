@@ -9,7 +9,7 @@ canvas {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: #54585a;
+  background: #2c2e43;
   position: fixed;
   z-index: -1;
 }
