@@ -4,4 +4,4 @@
 
 ## About
 
-<img align="right" width="200" height="183" src="./assets/images/hello.gif" alt="Welcome!">
+<img align="left" width="300" height="200" src="./assets/images/hello.gif" alt="Welcome!">
