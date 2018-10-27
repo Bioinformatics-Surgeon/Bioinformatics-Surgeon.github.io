@@ -1,5 +1,9 @@
 # Mudanic.com
 
+<a href="https://twitter.com/intent/follow?screen_name=TeaChaboshi">
+        <img src="https://img.shields.io/twitter/follow/TeaChaboshi.svg?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+
 #### ✨ I am a Full Stack Flex Web-developer. If you need a talented freelance developer please contact me. ✨
 
 <img align="center" width="300" height="200" src="./assets/images/hello.gif" alt="Welcome!">
