@@ -1,183 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody Goss</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cody Goss</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+    <!-- ICON CSS -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/glyphicons-2-leaf.png"
+    />
 
-  <!-- ICON CSS -->
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/glyphicons-2-leaf.png" />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="../assets/javascript/app.js"></script>
+    <script src="../assets/javascript/particles.js"></script>
 
-  <!-- Javascript -->
-  <script src="../assets/javascript/app.js"></script>
-  <script src="../assets/javascript/particles.js"></script>
+    <!-- Compiled and minified BootStrap CSS/JavaScript/Popper -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
 
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <!-- Compiled and minified BootStrap CSS/JavaScript/Popper -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+    <!--Import FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <body>
+    <div id="particle-div">
+      <div class="container">
+        <nav class=" rounded navbar navbar-expand-xl navbar-light bg-light">
+          <a class="navbar-brand" href="#">Mudanic</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <!--Import FontAwesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-</head>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Portfolio <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Contact <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+            <audio controls muted="true" preload="metadata">
+              <source
+                src="../assets/images/Adagio-for-strings.mp3"
+                type="audio/mp3"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </nav>
 
-<body>
-
-  <div id="particle-div">
-
-    <nav class="navbar navbar-expand navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-success border border-success rounded" href="#" id="navbarDropdown"
-              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+        <div id="main-container" class="container">
+          <section class="main-section">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="height:-webkit-fill-available;">
+                  Test
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <audio controls muted="true" preload="metadata">
-          <source src="../assets/images/Adagio-for-strings.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </nav>
 
-    <div id="main-container" class="container">
-      <section class="main-section">
-        <div class="h1">About</div>
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top rounded border border-primary" src="../assets/images/IMG_5049.jpeg" alt="Cody Goss"
-                style="transform: rotate(180deg);">
+            <div class="block m-2">
+              <p class="moto" style="font-weight: bold">
+                <strong>(site is still under construction 45% complete)</strong>
+              </p>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                  style="width: 45%"
+                >
+                  45%
+                </div>
+              </div>
+            </div>
+            <div class="h1">About</div>
+            <div class="row">
+              <div class="col d-flex justify-content-center"></div>
+            </div>
+
+            <p class="lead text-center">My moto for this website:</p>
+
+            <p class="moto h1 text-center">“μ-dan-ic” your ideas we develop.</p>
+
+            <p class="lead">
+              Hello, my name is Cody and I build websites for small business. I
+              created Mudanic in 2018 after my graduation from Georgia Institute
+              of Technology.
+            </p>
+
+            <p class="lead">
+              I want to bring the unique ideas of each client to the forefront
+              of the modern day web. I want to make sure all these beautiful
+              small businesses can use the web as a tool to help them thrive and
+              grow.
+            </p>
+            <p class="lead">
+              In May of 2018 I finished my studies as a full stack flex website
+              developer at the Georgia Institute of Technology in Atlanta, GA.
+              May of 2017 I received a B.S. in biochemistry from Kennesaw State
+              University located in Kennesaw, GA. As I was getting my B.S. I
+              worked towards a tea sommelier certification from the
+              International Tea Masters Association, of which I received in May
+              of 2017. I have traveled to Nepal, Japan, Europe, Canada, and the
+              Caribbean. Traveling is one of my many passions and I hope to
+              continue it throughout my life. Traveling around has given my a
+              deep appreciation for small businesses. They have made a lot of my
+              experience throughout the world ones I will remember for the rest
+              of my life.
+            </p>
+          </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="card text-center border-info bg-light">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <p class="card-text ">Mudanic &copy; 2018</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Check me out!</h5>
+
+                    <a
+                      href="https://twitter.com/TeaChaboshi?lang=en"
+                      class="btn btn-primary"
+                      target="_blank"
+                    >
+                      <i class="fab fa-twitter-square"></i
+                    ></a>
+
+                    <a
+                      href="https://www.linkedin.com/in/mudanic/"
+                      class="btn btn-primary"
+                      target="_blank"
+                    >
+                      <i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Bioinformatics-Surgeon"
+                      class="btn btn-primary"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github-square"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-
-        <p class="lead text-center">My moto for this website:
-        </p>
-
-        <p class="moto h1 text-center">“μ-dan-ic” your ideas we develop.</p>
-
-        <p class="lead">
-          Hello, my name is Cody and I build websites for small business. I created Mudanic in 2018
-          after my graduation from Georgia Institute of Technology.
-        </p>
-
-        <p class="lead">
-          I want to bring the unique ideas of each client to the forefront of the modern day web. I want to make sure
-          all these beautiful small businesses can use the web as a tool to help them thrive and grow.
-        </p>
-        <p class="lead">In May of 2018 I finished my studies as a full stack flex website developer at the Georgia
-          Institute of
-          Technology
-          in Atlanta, GA. May of 2017 I received a B.S. in biochemistry from Kennesaw State University located in
-          Kennesaw,
-          GA. As I was getting my B.S. I worked towards a tea sommelier certification from the International Tea
-          Masters
-          Association,
-          of which I received in May of 2017. I have traveled to Nepal, Japan, Europe, Canada, and the Caribbean.
-          Traveling
-          is one of my many passions and I hope to continue it throughout my life. Traveling around has given my a
-          deep
-          appreciation
-          for small businesses. They have made a lot of my experience throughout the world ones I will remember for
-          the
-          rest
-          of my life.
-        </p>
-
-        <p class="moto" style="font-weight: bold">
-          <strong>(site is still under construction)</strong>
-        </p>
-
-      </section>
-    </div>
-    <!-- Footer -->
-    <div class="card text-center bg-light">
-      <div class="card-body">
-        <div class="row">
-
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <!-- <h5 class="card-title">Special title treatment</h5> -->
-                <p class="card-text ">Mudanic &copy; 2018
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Check me out!</h5>
-
-                <a href="https://twitter.com/TeaChaboshi?lang=en" class="btn btn-primary" target="_blank">
-                  <i class="fab fa-twitter-square"></i></a>
-
-                <a href="https://www.linkedin.com/in/mudanic/" class="btn btn-primary" target="_blank">
-                  <i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Bioinformatics-Surgeon" class="btn btn-primary" target="_blank">
-                  <i class="fab fa-github-square"></i></a>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
