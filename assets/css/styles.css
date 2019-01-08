@@ -23,3 +23,7 @@ canvas {
 #exampleModalCenter {
   background: transparent;
 }
+
+#flex {
+  display: flex;
+}
