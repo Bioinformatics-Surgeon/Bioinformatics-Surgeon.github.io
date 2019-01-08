@@ -19,3 +19,7 @@ canvas {
   display: flex;
   flex-direction: row-reverse !important;
 }
+
+#exampleModalCenter {
+  background: transparent;
+}
