@@ -68,23 +68,13 @@
           class="navBarAlign rounded navbar navbar-expand-md navbar-light bg-light"
         >
           <a class="navbar-brand" href="#">Mudanic</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <button
-                  class="nav-link bg-transparent btn"
+                  class="nav-link bg-transparent btn collapsed"
                   id="flex"
                   type="button"
                   data-toggle="collapse"
@@ -95,7 +85,8 @@
                   Home
                 </button>
               </li>
-              <li class="nav-item active">
+
+              <li class="nav-item active collapsed">
                 <button
                   class="nav-link bg-transparent btn"
                   id="flex"
@@ -108,7 +99,8 @@
                   About
                 </button>
               </li>
-              <li class="nav-item active">
+
+              <li class="nav-item active collapsed">
                 <button
                   class="nav-link bg-transparent btn"
                   id="flex"
@@ -121,6 +113,7 @@
                   Portfolio
                 </button>
               </li>
+
               <li class="nav-item active">
                 <div
                   class="nav-link bg-transparent btn"
@@ -131,6 +124,7 @@
                   Contact <span class="sr-only">(current)</span>
                 </div>
               </li>
+
             </ul>
           </div>
 
@@ -204,7 +198,11 @@
               <!-- Landing Page -->
               <div class="row">
                 <div class="col">
-                  <div class="show" id="landingPage" aria-expanded="true">
+                  <div
+                    class="collapse show"
+                    id="landingPage"
+                    aria-expanded="true"
+                  >
                     <div class="card my-2 bg-transparent">
                       <div class="card-header h1 d-flex justify-content-center">
                         Mudanic
