@@ -96,11 +96,57 @@
                 >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
                   >Contact <span class="sr-only">(current)</span></a
                 >
               </li>
             </ul>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">
+                    Contact
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Reach out using:
+                  <a href="mailto:mudanic@mudanic.com" type="email"
+                    >mudanic@mudanic.com</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
 
@@ -232,5 +278,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const contactAlert = function() {
+        console.log('in contactAlert');
+        alert(
+          "Email me at 'mudanic@mudanic.com' for now I will have a contact form out soon"
+        );
+      };
+      $('#contactAlert').click(contactAlert);
+    </script>
   </body>
 </html>
