@@ -14,3 +14,8 @@ canvas {
   z-index: -1;
 }
 /* ============================================================================== */
+
+.navBarAlign {
+  display: flex;
+  flex-direction: row-reverse !important;
+}
