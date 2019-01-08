@@ -83,19 +83,43 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
+                <button
+                  class="nav-link bg-transparent btn"
+                  id="flex"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#landingPage"
+                  aria-expanded="false"
+                  aria-controls="landingPage"
                 >
+                  Home
+                </button>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >About <span class="sr-only">(current)</span></a
+                <button
+                  class="nav-link bg-transparent btn"
+                  id="flex"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
                 >
+                  About
+                </button>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Portfolio <span class="sr-only">(current)</span></a
+                <button
+                  class="nav-link bg-transparent btn"
+                  id="flex"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#portfolioPage"
+                  aria-expanded="false"
+                  aria-controls="portfolioPage"
                 >
+                  Portfolio
+                </button>
               </li>
               <li class="nav-item active">
                 <div
@@ -110,7 +134,7 @@
             </ul>
           </div>
 
-          <!-- Modal -->
+          <!-- Contact Modal -->
           <div
             class="modal fade"
             id="exampleModalCenter"
@@ -153,19 +177,24 @@
             </div>
           </div>
         </nav>
-
+        <!-- Main Container -->
         <div id="main-container" class="container">
           <section class="main-section">
-            <div class="block m-2">
-              <p class="moto" style="font-weight: bold">
-                <strong>(site is still under construction 55% complete)</strong>
-              </p>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                  style="width: 55%"
-                >
-                  55%
+            <!-- Progress Bar -->
+            <div class="row justify-content-center">
+              <div class="block m-2">
+                <p class="moto" style="font-weight: bold">
+                  <strong
+                    >(site is still under construction 57% complete)</strong
+                  >
+                </p>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                    style="width: 57%"
+                  >
+                    57%
+                  </div>
                 </div>
               </div>
             </div>
@@ -173,51 +202,91 @@
             <!-- Landing Page -->
             <div class="row">
               <div class="col">
-                <div
-                  class="card bg-transparent"
-                  style="height:-webkit-fill-available; justify-content: center;
-                  align-items: center;"
-                >
-                  Cody Goss @ Mudanic
+                <div class="collapse" id="landingPage">
+                  <div class="card my-2 bg-transparent">
+                    <div class="card-header h1 d-flex justify-content-center">
+                      Mudanic
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="card bg-transparent"
+                        style="height:-webkit-fill-available; justify-content: center;
+                      align-items: center;"
+                      >
+                        Cody Goss @ Mudanic
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="h1">About</div>
+            <!-- About Page -->
             <div class="row">
-              <div class="col d-flex justify-content-center"></div>
+              <div class="col">
+                <div class="collapse" id="collapseExample">
+                  <div class="card my-2 bg-transparent">
+                    <div class="card-header h1 d-flex justify-content-center">
+                      About
+                    </div>
+                    <div class="card-body">
+                      <p class="lead">
+                        Hello, my name is Cody and I build websites for small
+                        business. I created Mudanic in 2018 after my graduation
+                        from Georgia Institute of Technology.
+                      </p>
+                      <p class="lead">
+                        I want to bring the unique ideas of each client to the
+                        forefront of the modern day web. I want to make sure all
+                        these beautiful small businesses can use the web as a
+                        tool to help them thrive and grow.
+                      </p>
+                      <p class="lead">
+                        In May of 2018 I finished my studies as a full stack
+                        flex website developer at the Georgia Institute of
+                        Technology in Atlanta, GA. May of 2017 I received a B.S.
+                        in biochemistry from Kennesaw State University located
+                        in Kennesaw, GA. As I was getting my B.S. I worked
+                        towards a tea sommelier certification from the
+                        International Tea Masters Association, of which I
+                        received in May of 2017. I have traveled to Nepal,
+                        Japan, Europe, Canada, and the Caribbean. Traveling is
+                        one of my many passions and I hope to continue it
+                        throughout my life. Traveling around has given my a deep
+                        appreciation for small businesses. They have made a lot
+                        of my experience throughout the world ones I will
+                        remember for the rest of my life.
+                      </p>
+                      <p class="moto h1 text-center">
+                        “μ-dan-ic” your ideas we develop.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <p class="lead text-center">My moto for this website:</p>
-
-            <p class="moto h1 text-center">“μ-dan-ic” your ideas we develop.</p>
-
-            <p class="lead">
-              Hello, my name is Cody and I build websites for small business. I
-              created Mudanic in 2018 after my graduation from Georgia Institute
-              of Technology.
-            </p>
-
-            <p class="lead">
-              I want to bring the unique ideas of each client to the forefront
-              of the modern day web. I want to make sure all these beautiful
-              small businesses can use the web as a tool to help them thrive and
-              grow.
-            </p>
-            <p class="lead">
-              In May of 2018 I finished my studies as a full stack flex website
-              developer at the Georgia Institute of Technology in Atlanta, GA.
-              May of 2017 I received a B.S. in biochemistry from Kennesaw State
-              University located in Kennesaw, GA. As I was getting my B.S. I
-              worked towards a tea sommelier certification from the
-              International Tea Masters Association, of which I received in May
-              of 2017. I have traveled to Nepal, Japan, Europe, Canada, and the
-              Caribbean. Traveling is one of my many passions and I hope to
-              continue it throughout my life. Traveling around has given my a
-              deep appreciation for small businesses. They have made a lot of my
-              experience throughout the world ones I will remember for the rest
-              of my life.
-            </p>
+            <!-- Portfolio Page -->
+            <div class="row">
+              <div class="col">
+                <div class="collapse" id="portfolioPage">
+                  <div class="card my-2 bg-transparent">
+                    <div class="card-header h1 d-flex justify-content-center">
+                      Portfolio
+                    </div>
+                    <div class="card-body">
+                      <div
+                        class="card bg-transparent"
+                        style="height:-webkit-fill-available; justify-content: center;
+                        align-items: center;"
+                      >
+                        Cody Goss @ Mudanic
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
 
