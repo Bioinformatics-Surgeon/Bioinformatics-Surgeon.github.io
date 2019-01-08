@@ -68,9 +68,17 @@
           class="navBarAlign rounded navbar navbar-expand-md navbar-light bg-light"
         >
           <a class="navbar-brand" href="#">Mudanic</a>
-
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -348,17 +356,14 @@
     </div>
 
     <script>
+      const toggleContent = function() {
+        console.log(' Inside toggleContent! ');
+        var selected = $('#landingPage');
+        console.log('Selected', selected);
+        selected.removeClass('show');
+      };
 
-  const toggleContent = function () {
-    console.log(" Inside toggleContent! ")
-    var selected = $('#landingPage');
-    console.log("Selected", selected);
-    selected.removeClass('show');
-    }
-
-
-  $('.toggleContentTest').click(toggleContent);
-
+      $('.toggleContentTest').click(toggleContent);
     </script>
   </body>
 </html>
