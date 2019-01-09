@@ -63,7 +63,7 @@
 
   <body>
     <div id="particle-div">
-      <div class="container">
+      <div class="container collapse-group">
         <nav
           class="navBarAlign rounded navbar navbar-expand-md navbar-light bg-light"
         >
@@ -83,7 +83,7 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <button
-                  class="nav-link bg-transparent btn"
+                  class="nav-link bg-transparent btn toggleContentTest"
                   id="flex"
                   type="button"
                   data-toggle="collapse"
@@ -109,7 +109,7 @@
               </li>
               <li class="nav-item active">
                 <button
-                  class="nav-link bg-transparent btn"
+                  class="nav-link bg-transparent btn toggleContentTest"
                   id="flex"
                   type="button"
                   data-toggle="collapse"
@@ -186,15 +186,15 @@
                 <div class="block m-2">
                   <p class="moto" style="font-weight: bold">
                     <strong
-                      >(site is still under construction 57% complete)</strong
+                      >(site is still under construction 62% complete)</strong
                     >
                   </p>
                   <div class="progress">
                     <div
                       class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                      style="width: 57%"
+                      style="width: 62%"
                     >
-                      57%
+                      62%
                     </div>
                   </div>
                 </div>
@@ -357,10 +357,10 @@
 
     <script>
       const toggleContent = function() {
-        console.log(' Inside toggleContent! ');
-        var selected = $('#landingPage');
-        console.log('Selected', selected);
-        selected.removeClass('show');
+        $(this)
+          .closest('.collapse-group')
+          .find('.collapse')
+          .collapse('hide');
       };
 
       $('.toggleContentTest').click(toggleContent);
