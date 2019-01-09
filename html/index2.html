@@ -68,9 +68,17 @@
           class="navBarAlign rounded navbar navbar-expand-md navbar-light bg-light"
         >
           <a class="navbar-brand" href="#">Mudanic</a>
-
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -88,7 +96,7 @@
               </li>
               <li class="nav-item active">
                 <button
-                  class="nav-link bg-transparent btn"
+                  class="nav-link bg-transparent btn toggleContentTest"
                   id="flex"
                   type="button"
                   data-toggle="collapse"
@@ -216,7 +224,7 @@
               </div>
 
               <!-- About Page -->
-              <div class="row">
+              <div class="row aboutPage">
                 <div class="col">
                   <div class="collapse" id="collapseExample">
                     <div class="card my-2 bg-transparent">
@@ -348,13 +356,14 @@
     </div>
 
     <script>
-      const contactAlert = function() {
-        console.log('in contactAlert');
-        alert(
-          "Email me at 'mudanic@mudanic.com' for now I will have a contact form out soon"
-        );
+      const toggleContent = function() {
+        console.log(' Inside toggleContent! ');
+        var selected = $('#landingPage');
+        console.log('Selected', selected);
+        selected.removeClass('show');
       };
-      $('#contactAlert').click(contactAlert);
+
+      $('.toggleContentTest').click(toggleContent);
     </script>
   </body>
 </html>
