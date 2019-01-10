@@ -27,3 +27,20 @@ canvas {
 #flex {
   display: flex;
 }
+
+svg {
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+}
+
+.react {
+  fill: #61dafb;
+}
+.heroku {
+  fill: #9e7cc1;
+}
+.python {
+  width: 42px;
+  height: 42px;
+}
