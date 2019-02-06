@@ -44,3 +44,9 @@ svg {
   width: 42px;
   height: 42px;
 }
+
+body {
+  background: url(../images/brian-suh-503989-unsplash.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+}
