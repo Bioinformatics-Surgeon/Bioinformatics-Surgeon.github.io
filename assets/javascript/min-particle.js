@@ -1,15 +1,15 @@
 var pJS = function(e, t) {
-  var a = document.querySelector('#' + e + ' > .particles-js-canvas-el');
+  var a = document.querySelector("#" + e + " > .particles-js-canvas-el");
   this.pJS = {
     canvas: { el: a, w: a.offsetWidth, h: a.offsetHeight },
     particles: {
       number: { value: 400, density: { enable: !0, value_area: 800 } },
-      color: { value: '#fff' },
+      color: { value: "#fff" },
       shape: {
-        type: 'circle',
-        stroke: { width: 0, color: '#ff0000' },
+        type: "image",
+        stroke: { width: 0, color: "#ff0000" },
         polygon: { nb_sides: 5 },
-        image: { src: '', width: 100, height: 100 }
+        image: { src: "../iamges/owl.png", width: 100, height: 100 }
       },
       opacity: {
         value: 1,
@@ -24,27 +24,27 @@ var pJS = function(e, t) {
       line_linked: {
         enable: !0,
         distance: 100,
-        color: '#fff',
+        color: "#fff",
         opacity: 1,
         width: 1
       },
       move: {
         enable: !0,
         speed: 2,
-        direction: 'none',
+        direction: "none",
         random: !1,
         straight: !1,
-        out_mode: 'out',
+        out_mode: "out",
         bounce: !1,
         attract: { enable: !1, rotateX: 3e3, rotateY: 3e3 }
       },
       array: []
     },
     interactivity: {
-      detect_on: 'canvas',
+      detect_on: "canvas",
       events: {
-        onhover: { enable: !0, mode: 'grab' },
-        onclick: { enable: !0, mode: 'push' },
+        onhover: { enable: !0, mode: "grab" },
+        onclick: { enable: !0, mode: "push" },
         resize: !0
       },
       modes: {
@@ -97,14 +97,14 @@ var pJS = function(e, t) {
           i.tmp.obj.mode_repulse_distance * i.canvas.pxratio);
     }),
     (i.fn.canvasInit = function() {
-      i.canvas.ctx = i.canvas.el.getContext('2d');
+      i.canvas.ctx = i.canvas.el.getContext("2d");
     }),
     (i.fn.canvasSize = function() {
       (i.canvas.el.width = i.canvas.w),
         (i.canvas.el.height = i.canvas.h),
         i &&
           i.interactivity.events.resize &&
-          window.addEventListener('resize', function() {
+          window.addEventListener("resize", function() {
             (i.canvas.w = i.canvas.el.offsetWidth),
               (i.canvas.h = i.canvas.el.offsetHeight),
               i.tmp.retina &&
@@ -145,7 +145,7 @@ var pJS = function(e, t) {
           : this.y < 2 * this.radius && (this.y = this.y + this.radius),
         i.particles.move.bounce && i.fn.vendors.checkOverlap(this, a),
         (this.color = {}),
-        'object' == typeof e.value)
+        "object" == typeof e.value)
       )
         if (e.value instanceof Array) {
           var s =
@@ -161,13 +161,13 @@ var pJS = function(e, t) {
               void 0 != e.value.l &&
               (this.color.hsl = { h: e.value.h, s: e.value.s, l: e.value.l });
       else
-        'random' == e.value
+        "random" == e.value
           ? (this.color.rgb = {
               r: Math.floor(256 * Math.random()) + 0,
               g: Math.floor(256 * Math.random()) + 0,
               b: Math.floor(256 * Math.random()) + 0
             })
-          : 'string' == typeof e.value &&
+          : "string" == typeof e.value &&
             ((this.color = e), (this.color.rgb = hexToRgb(this.color.value)));
       (this.opacity =
         (i.particles.opacity.random ? Math.random() : 1) *
@@ -178,28 +178,28 @@ var pJS = function(e, t) {
           i.particles.opacity.anim.sync || (this.vo = this.vo * Math.random()));
       var n = {};
       switch (i.particles.move.direction) {
-        case 'top':
+        case "top":
           n = { x: 0, y: -1 };
           break;
-        case 'top-right':
+        case "top-right":
           n = { x: 0.5, y: -0.5 };
           break;
-        case 'right':
+        case "right":
           n = { x: 1, y: -0 };
           break;
-        case 'bottom-right':
+        case "bottom-right":
           n = { x: 0.5, y: 0.5 };
           break;
-        case 'bottom':
+        case "bottom":
           n = { x: 0, y: 1 };
           break;
-        case 'bottom-left':
+        case "bottom-left":
           n = { x: -0.5, y: 1 };
           break;
-        case 'left':
+        case "left":
           n = { x: -1, y: 0 };
           break;
-        case 'top-left':
+        case "top-left":
           n = { x: -0.5, y: -0.5 };
           break;
         default:
@@ -216,20 +216,20 @@ var pJS = function(e, t) {
         (this.vx_i = this.vx),
         (this.vy_i = this.vy);
       var r = i.particles.shape.type;
-      if ('object' == typeof r) {
+      if ("object" == typeof r) {
         if (r instanceof Array) {
           var c = r[Math.floor(Math.random() * r.length)];
           this.shape = c;
         }
       } else this.shape = r;
-      if ('image' == this.shape) {
+      if ("image" == this.shape) {
         var o = i.particles.shape;
         (this.img = {
           src: o.image.src,
           ratio: o.image.width / o.image.height
         }),
           this.img.ratio || (this.img.ratio = 1),
-          'svg' == i.tmp.img_type &&
+          "svg" == i.tmp.img_type &&
             void 0 != i.tmp.source_svg &&
             (i.fn.vendors.createSvgImg(this),
             i.tmp.pushing && (this.img.loaded = !1));
@@ -243,36 +243,36 @@ var pJS = function(e, t) {
       else a = e.opacity;
       if (e.color.rgb)
         var s =
-          'rgba(' +
+          "rgba(" +
           e.color.rgb.r +
-          ',' +
+          "," +
           e.color.rgb.g +
-          ',' +
+          "," +
           e.color.rgb.b +
-          ',' +
+          "," +
           a +
-          ')';
+          ")";
       else
         s =
-          'hsla(' +
+          "hsla(" +
           e.color.hsl.h +
-          ',' +
+          "," +
           e.color.hsl.s +
-          '%,' +
+          "%," +
           e.color.hsl.l +
-          '%,' +
+          "%," +
           a +
-          ')';
+          ")";
       switch (
         ((i.canvas.ctx.fillStyle = s), i.canvas.ctx.beginPath(), e.shape)
       ) {
-        case 'circle':
+        case "circle":
           i.canvas.ctx.arc(e.x, e.y, t, 0, 2 * Math.PI, !1);
           break;
-        case 'edge':
+        case "edge":
           i.canvas.ctx.rect(e.x - t, e.y - t, 2 * t, 2 * t);
           break;
-        case 'triangle':
+        case "triangle":
           i.fn.vendors.drawShape(
             i.canvas.ctx,
             e.x - t,
@@ -282,7 +282,7 @@ var pJS = function(e, t) {
             2
           );
           break;
-        case 'polygon':
+        case "polygon":
           i.fn.vendors.drawShape(
             i.canvas.ctx,
             e.x - t / (i.particles.shape.polygon.nb_sides / 3.5),
@@ -292,7 +292,7 @@ var pJS = function(e, t) {
             1
           );
           break;
-        case 'star':
+        case "star":
           i.fn.vendors.drawShape(
             i.canvas.ctx,
             e.x - (2 * t) / (i.particles.shape.polygon.nb_sides / 4),
@@ -302,8 +302,8 @@ var pJS = function(e, t) {
             2
           );
           break;
-        case 'image':
-          if ('svg' == i.tmp.img_type) var n = e.img.obj;
+        case "image":
+          if ("svg" == i.tmp.img_type) var n = e.img.obj;
           else n = i.tmp.img_obj;
           n &&
             i.canvas.ctx.drawImage(
@@ -352,7 +352,7 @@ var pJS = function(e, t) {
                   (t.size_status = !0),
                 (t.radius -= t.vs)),
             t.radius < 0 && (t.radius = 0)),
-          'bounce' == i.particles.move.out_mode)
+          "bounce" == i.particles.move.out_mode)
         )
           var s = {
             x_left: t.radius,
@@ -378,7 +378,7 @@ var pJS = function(e, t) {
               ((t.y = s.y_bottom), (t.x = Math.random() * i.canvas.w)),
           i.particles.move.out_mode)
         ) {
-          case 'bounce':
+          case "bounce":
             t.x + t.radius > i.canvas.w
               ? (t.vx = -t.vx)
               : t.x - t.radius < 0 && (t.vx = -t.vx),
@@ -387,13 +387,13 @@ var pJS = function(e, t) {
                 : t.y - t.radius < 0 && (t.vy = -t.vy);
         }
         if (
-          (isInArray('grab', i.interactivity.events.onhover.mode) &&
+          (isInArray("grab", i.interactivity.events.onhover.mode) &&
             i.fn.modes.grabParticle(t),
-          (isInArray('bubble', i.interactivity.events.onhover.mode) ||
-            isInArray('bubble', i.interactivity.events.onclick.mode)) &&
+          (isInArray("bubble", i.interactivity.events.onhover.mode) ||
+            isInArray("bubble", i.interactivity.events.onclick.mode)) &&
             i.fn.modes.bubbleParticle(t),
-          (isInArray('repulse', i.interactivity.events.onhover.mode) ||
-            isInArray('repulse', i.interactivity.events.onclick.mode)) &&
+          (isInArray("repulse", i.interactivity.events.onhover.mode) ||
+            isInArray("repulse", i.interactivity.events.onclick.mode)) &&
             i.fn.modes.repulseParticle(t),
           i.particles.line_linked.enable || i.particles.move.attract.enable)
         )
@@ -439,7 +439,7 @@ var pJS = function(e, t) {
         if (r > 0) {
           var c = i.particles.line_linked.color_rgb_line;
           (i.canvas.ctx.strokeStyle =
-            'rgba(' + c.r + ',' + c.g + ',' + c.b + ',' + r + ')'),
+            "rgba(" + c.r + "," + c.g + "," + c.b + "," + r + ")"),
             (i.canvas.ctx.lineWidth = i.particles.line_linked.width),
             i.canvas.ctx.beginPath(),
             i.canvas.ctx.moveTo(e.x, e.y),
@@ -484,7 +484,7 @@ var pJS = function(e, t) {
     (i.fn.modes.bubbleParticle = function(e) {
       if (
         i.interactivity.events.onhover.enable &&
-        isInArray('bubble', i.interactivity.events.onhover.mode)
+        isInArray("bubble", i.interactivity.events.onhover.mode)
       ) {
         var t = e.x - i.interactivity.mouse.pos_x,
           a = e.y - i.interactivity.mouse.pos_y,
@@ -496,7 +496,7 @@ var pJS = function(e, t) {
           (e.opacity_bubble = e.opacity), (e.radius_bubble = e.radius);
         }
         if (l <= i.interactivity.modes.bubble.distance) {
-          if (s >= 0 && 'mousemove' == i.interactivity.status) {
+          if (s >= 0 && "mousemove" == i.interactivity.status) {
             if (i.interactivity.modes.bubble.size != i.particles.size.value)
               if (i.interactivity.modes.bubble.size > i.particles.size.value) {
                 (c = e.radius + i.interactivity.modes.bubble.size * s) >= 0 &&
@@ -526,10 +526,10 @@ var pJS = function(e, t) {
                   (e.opacity_bubble = o);
           }
         } else n();
-        'mouseleave' == i.interactivity.status && n();
+        "mouseleave" == i.interactivity.status && n();
       } else if (
         i.interactivity.events.onclick.enable &&
-        isInArray('bubble', i.interactivity.events.onclick.mode)
+        isInArray("bubble", i.interactivity.events.onclick.mode)
       ) {
         if (i.tmp.bubble_clicking) {
           (t = e.x - i.interactivity.mouse.click_pos_x),
@@ -550,20 +550,20 @@ var pJS = function(e, t) {
                   (t -
                     (n -
                       (v * (n - t)) / i.interactivity.modes.bubble.duration))),
-                'size' == r && (e.radius_bubble = o),
-                'opacity' == r && (e.opacity_bubble = o));
+                "size" == r && (e.radius_bubble = o),
+                "opacity" == r && (e.opacity_bubble = o));
             else if (l <= i.interactivity.modes.bubble.distance) {
               if (void 0 != s) var c = s;
               else c = n;
               if (c != t) {
                 var o =
                   n - (v * (n - t)) / i.interactivity.modes.bubble.duration;
-                'size' == r && (e.radius_bubble = o),
-                  'opacity' == r && (e.opacity_bubble = o);
+                "size" == r && (e.radius_bubble = o),
+                  "opacity" == r && (e.opacity_bubble = o);
               }
             } else
-              'size' == r && (e.radius_bubble = void 0),
-                'opacity' == r && (e.opacity_bubble = void 0);
+              "size" == r && (e.radius_bubble = void 0),
+                "opacity" == r && (e.opacity_bubble = void 0);
         }
         i.tmp.bubble_clicking &&
           (p(
@@ -571,22 +571,22 @@ var pJS = function(e, t) {
             i.particles.size.value,
             e.radius_bubble,
             e.radius,
-            'size'
+            "size"
           ),
           p(
             i.interactivity.modes.bubble.opacity,
             i.particles.opacity.value,
             e.opacity_bubble,
             e.opacity,
-            'opacity'
+            "opacity"
           ));
       }
     }),
     (i.fn.modes.repulseParticle = function(e) {
       if (
         i.interactivity.events.onhover.enable &&
-        isInArray('repulse', i.interactivity.events.onhover.mode) &&
-        'mousemove' == i.interactivity.status
+        isInArray("repulse", i.interactivity.events.onhover.mode) &&
+        "mousemove" == i.interactivity.status
       ) {
         var t = e.x - i.interactivity.mouse.pos_x,
           a = e.y - i.interactivity.mouse.pos_y,
@@ -602,13 +602,13 @@ var pJS = function(e, t) {
             50
           ),
           o = { x: e.x + n * c, y: e.y + r * c };
-        'bounce' == i.particles.move.out_mode
+        "bounce" == i.particles.move.out_mode
           ? (o.x - e.radius > 0 && o.x + e.radius < i.canvas.w && (e.x = o.x),
             o.y - e.radius > 0 && o.y + e.radius < i.canvas.h && (e.y = o.y))
           : ((e.x = o.x), (e.y = o.y));
       } else if (
         i.interactivity.events.onclick.enable &&
-        isInArray('repulse', i.interactivity.events.onclick.mode)
+        isInArray("repulse", i.interactivity.events.onclick.mode)
       )
         if (
           (i.tmp.repulse_finish ||
@@ -628,7 +628,7 @@ var pJS = function(e, t) {
               if (
                 ((e.vx = m * Math.cos(t)),
                 (e.vy = m * Math.sin(t)),
-                'bounce' == i.particles.move.out_mode)
+                "bounce" == i.particles.move.out_mode)
               ) {
                 var a = e.x + e.vx,
                   s = e.y + e.vy;
@@ -646,7 +646,7 @@ var pJS = function(e, t) {
     (i.fn.modes.grabParticle = function(e) {
       if (
         i.interactivity.events.onhover.enable &&
-        'mousemove' == i.interactivity.status
+        "mousemove" == i.interactivity.status
       ) {
         var t = e.x - i.interactivity.mouse.pos_x,
           a = e.y - i.interactivity.mouse.pos_y,
@@ -660,7 +660,7 @@ var pJS = function(e, t) {
           if (n > 0) {
             var r = i.particles.line_linked.color_rgb_line;
             (i.canvas.ctx.strokeStyle =
-              'rgba(' + r.r + ',' + r.g + ',' + r.b + ',' + n + ')'),
+              "rgba(" + r.r + "," + r.g + "," + r.b + "," + n + ")"),
               (i.canvas.ctx.lineWidth = i.particles.line_linked.width),
               i.canvas.ctx.beginPath(),
               i.canvas.ctx.moveTo(e.x, e.y),
@@ -675,12 +675,12 @@ var pJS = function(e, t) {
       }
     }),
     (i.fn.vendors.eventsListeners = function() {
-      'window' == i.interactivity.detect_on
+      "window" == i.interactivity.detect_on
         ? (i.interactivity.el = window)
         : (i.interactivity.el = i.canvas.el),
         (i.interactivity.events.onhover.enable ||
           i.interactivity.events.onclick.enable) &&
-          (i.interactivity.el.addEventListener('mousemove', function(e) {
+          (i.interactivity.el.addEventListener("mousemove", function(e) {
             if (i.interactivity.el == window)
               var t = e.clientX,
                 a = e.clientY;
@@ -690,15 +690,15 @@ var pJS = function(e, t) {
               i.tmp.retina &&
                 ((i.interactivity.mouse.pos_x *= i.canvas.pxratio),
                 (i.interactivity.mouse.pos_y *= i.canvas.pxratio)),
-              (i.interactivity.status = 'mousemove');
+              (i.interactivity.status = "mousemove");
           }),
-          i.interactivity.el.addEventListener('mouseleave', function(e) {
+          i.interactivity.el.addEventListener("mouseleave", function(e) {
             (i.interactivity.mouse.pos_x = null),
               (i.interactivity.mouse.pos_y = null),
-              (i.interactivity.status = 'mouseleave');
+              (i.interactivity.status = "mouseleave");
           })),
         i.interactivity.events.onclick.enable &&
-          i.interactivity.el.addEventListener('click', function() {
+          i.interactivity.el.addEventListener("click", function() {
             if (
               ((i.interactivity.mouse.click_pos_x =
                 i.interactivity.mouse.pos_x),
@@ -707,7 +707,7 @@ var pJS = function(e, t) {
               i.interactivity.events.onclick.enable)
             )
               switch (i.interactivity.events.onclick.mode) {
-                case 'push':
+                case "push":
                   i.particles.move.enable
                     ? i.fn.modes.pushParticles(
                         i.interactivity.modes.push.particles_nb,
@@ -723,15 +723,15 @@ var pJS = function(e, t) {
                         i.interactivity.modes.push.particles_nb
                       );
                   break;
-                case 'remove':
+                case "remove":
                   i.fn.modes.removeParticles(
                     i.interactivity.modes.remove.particles_nb
                   );
                   break;
-                case 'bubble':
+                case "bubble":
                   i.tmp.bubble_clicking = !0;
                   break;
-                case 'repulse':
+                case "repulse":
                   (i.tmp.repulse_clicking = !0),
                     (i.tmp.repulse_count = 0),
                     (i.tmp.repulse_finish = !1),
@@ -774,33 +774,33 @@ var pJS = function(e, t) {
         ) {
           if (e.color.rgb)
             var n =
-              'rgba(' +
+              "rgba(" +
               e.color.rgb.r +
-              ',' +
+              "," +
               e.color.rgb.g +
-              ',' +
+              "," +
               e.color.rgb.b +
-              ',' +
+              "," +
               e.opacity +
-              ')';
+              ")";
           else
             n =
-              'hsla(' +
+              "hsla(" +
               e.color.hsl.h +
-              ',' +
+              "," +
               e.color.hsl.s +
-              '%,' +
+              "%," +
               e.color.hsl.l +
-              '%,' +
+              "%," +
               e.opacity +
-              ')';
+              ")";
           return n;
         }),
-        a = new Blob([t], { type: 'image/svg+xml;charset=utf-8' }),
+        a = new Blob([t], { type: "image/svg+xml;charset=utf-8" }),
         s = window.URL || window.webkitURL || window,
         n = s.createObjectURL(a),
         r = new Image();
-      r.addEventListener('load', function() {
+      r.addEventListener("load", function() {
         (e.img.obj = r),
           (e.img.loaded = !0),
           s.revokeObjectURL(n),
@@ -822,34 +822,34 @@ var pJS = function(e, t) {
       e.fill(), e.restore();
     }),
     (i.fn.vendors.exportImg = function() {
-      window.open(i.canvas.el.toDataURL('image/png'), '_blank');
+      window.open(i.canvas.el.toDataURL("image/png"), "_blank");
     }),
     (i.fn.vendors.loadImg = function(e) {
-      if (((i.tmp.img_error = void 0), '' != i.particles.shape.image.src))
-        if ('svg' == e) {
+      if (((i.tmp.img_error = void 0), "" != i.particles.shape.image.src))
+        if ("svg" == e) {
           var t = new XMLHttpRequest();
-          t.open('GET', i.particles.shape.image.src),
+          t.open("GET", i.particles.shape.image.src),
             (t.onreadystatechange = function(e) {
               4 == t.readyState &&
                 (200 == t.status
                   ? ((i.tmp.source_svg = e.currentTarget.response),
                     i.fn.vendors.checkBeforeDraw())
-                  : (console.log('Error pJS - Image not found'),
+                  : (console.log("Error pJS - Image not found"),
                     (i.tmp.img_error = !0)));
             }),
             t.send();
         } else {
           var a = new Image();
-          a.addEventListener('load', function() {
+          a.addEventListener("load", function() {
             (i.tmp.img_obj = a), i.fn.vendors.checkBeforeDraw();
           }),
             (a.src = i.particles.shape.image.src);
         }
-      else console.log('Error pJS - No image.src'), (i.tmp.img_error = !0);
+      else console.log("Error pJS - No image.src"), (i.tmp.img_error = !0);
     }),
     (i.fn.vendors.draw = function() {
-      'image' == i.particles.shape.type
-        ? 'svg' == i.tmp.img_type
+      "image" == i.particles.shape.type
+        ? "svg" == i.tmp.img_type
           ? i.tmp.count_svg >= i.particles.number.value
             ? (i.fn.particlesDraw(),
               i.particles.move.enable
@@ -870,8 +870,8 @@ var pJS = function(e, t) {
             : cancelRequestAnimFrame(i.fn.drawAnimFrame));
     }),
     (i.fn.vendors.checkBeforeDraw = function() {
-      'image' == i.particles.shape.type
-        ? 'svg' == i.tmp.img_type && void 0 == i.tmp.source_svg
+      "image" == i.particles.shape.type
+        ? "svg" == i.tmp.img_type && void 0 == i.tmp.source_svg
           ? (i.tmp.checkAnimFrame = requestAnimFrame(check))
           : (cancelRequestAnimFrame(i.tmp.checkAnimFrame),
             i.tmp.img_error || (i.fn.vendors.init(), i.fn.vendors.draw()))
@@ -889,7 +889,7 @@ var pJS = function(e, t) {
         ));
     }),
     (i.fn.vendors.start = function() {
-      isInArray('image', i.particles.shape.type)
+      isInArray("image", i.particles.shape.type)
         ? ((i.tmp.img_type = i.particles.shape.image.src.substr(
             i.particles.shape.image.src.length - 3
           )),
@@ -939,30 +939,30 @@ function isInArray(e, t) {
     clearTimeout),
   (window.pJSDom = []),
   (window.particlesJS = function(e, t) {
-    'string' != typeof e && ((t = e), (e = 'particles-js')),
-      e || (e = 'particles-js');
+    "string" != typeof e && ((t = e), (e = "particles-js")),
+      e || (e = "particles-js");
     var a = document.getElementById(e),
-      i = 'particles-js-canvas-el',
+      i = "particles-js-canvas-el",
       s = a.getElementsByClassName(i);
     if (s.length) for (; s.length > 0; ) a.removeChild(s[0]);
-    var n = document.createElement('canvas');
+    var n = document.createElement("canvas");
     (n.className = i),
-      (n.style.width = '100%'),
-      (n.style.height = '100%'),
+      (n.style.width = "100%"),
+      (n.style.height = "100%"),
       null != document.getElementById(e).appendChild(n) &&
         pJSDom.push(new pJS(e, t));
   }),
   (window.particlesJS.load = function(e, t, a) {
     var i = new XMLHttpRequest();
-    i.open('GET', t),
+    i.open("GET", t),
       (i.onreadystatechange = function(t) {
         if (4 == i.readyState)
           if (200 == i.status) {
             var s = JSON.parse(t.currentTarget.response);
             window.particlesJS(e, s), a && a();
           } else
-            console.log('Error pJS - XMLHttpRequest status: ' + i.status),
-              console.log('Error pJS - File config not found');
+            console.log("Error pJS - XMLHttpRequest status: " + i.status),
+              console.log("Error pJS - File config not found");
       }),
       i.send();
   });
