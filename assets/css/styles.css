@@ -70,3 +70,12 @@ svg {
   border-left: 29px solid transparent;
   border-right: 29px solid transparent;
 }
+
+.glowOnHover {
+  box-shadow: none;
+}
+
+.glowOnHover:hover,
+.glowOnHover:active {
+  box-shadow: 0 0 8px #eaaa00;
+}
