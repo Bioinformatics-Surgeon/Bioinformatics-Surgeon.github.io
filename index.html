@@ -222,17 +222,15 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 132px 1fr;
+      grid-template-columns: 250px 1fr;
       gap: 1.75rem;
       align-items: start;
     }
 
     .about-grid img {
-      width: 132px;
-      height: 132px;
+      width: 250px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid var(--line);
     }
 
     .about-grid p+p {
@@ -250,11 +248,12 @@
     @media (max-width: 540px) {
       .about-grid {
         grid-template-columns: 1fr;
+        place-items: center;
       }
 
       .about-grid img {
-        width: 104px;
-        height: 104px;
+        width: 250px;
+        height: 250px;
       }
     }
 
